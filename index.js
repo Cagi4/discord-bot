@@ -13,7 +13,7 @@ const client = new Client({
 
 // === КОНФИГУРАЦИЯ ===
 const config = {
-    token: process.env.TOKEN
+    token: process.env.TOKEN,
     applicationsChannelId: '1467871123445121190',
     // ID ролей для заявок (ЗАМЕНИТЕ НА СВОИ!)
     applicationRoles: {
