@@ -1,0 +1,20 @@
+{
+  "name": "discord-applications-bot",
+  "version": "1.0.0",
+  "description": "Бот для обработки заявок на Discord сервере",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.25.1",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.11.0"
+  }
+}

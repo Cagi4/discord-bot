@@ -1,0 +1,4 @@
+{
+  "token": process.env.TOKEN,
+  "applicationsChannelId": "1460207602637082704"
+}
