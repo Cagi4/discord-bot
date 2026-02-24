@@ -1261,9 +1261,6 @@ client.on('messageCreate', async message => {
     }
 });
 
-// Запуск бота
-client.login(config.token);
-
 // === ОБРАБОТКА ОШИБОК ДЛЯ 24/7 РАБОТЫ ===
 process.on('unhandledRejection', error => {
     console.error('Unhandled promise rejection:', error);
@@ -1273,7 +1270,7 @@ process.on('uncaughtException', error => {
     console.error('Uncaught exception:', error);
 });
 
-// Запуск бота с автоматическим переподключением
+// Запуск бота (ТОЛЬКО ОДИН РАЗ!)
 client.login(config.token).catch(error => {
     console.error('Failed to login:', error);
     process.exit(1);
